@@ -6,13 +6,20 @@
     <script src="js/url.js"></script>
     <title>Convert Tiny Urls to Long urls</title>
   </head>
-  <body class="container well">
-    <h1>Convert tiny urls to long urls</h1>
-    <form class="form-horizonal" id="tiny_url_form">
-      <div class="form-group">
-        <input type="text" class="form-control input-lg" placeholder="Tiny url here">
+  <body class="container">
+    <div class="well">
+      <h1>Convert tiny urls to long urls</h1>
+      <form class="form-horizonal" id="tiny_url_form">
+        <div class="form-group">
+          <input type="text" class="form-control input-lg" placeholder="Tiny url here" id="tiny_url_input">
+        </div>
+        <input type="submit" value="Get long url" class="btn btn-primary">
+        <span id="loading_spinner" style="display:none;">
+          <img src="images/spinner.gif">
+        </span>
+      </form>
+      <div id="long_url_container">
       </div>
-      <input type="submit" class="btn btn-primary">
-    </form>
+    </div>
   </body>
 </html>

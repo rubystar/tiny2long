@@ -40,6 +40,8 @@ GEM
     rack (1.6.0)
     rack-accept (0.4.5)
       rack (>= 0.4)
+    rack-contrib (1.2.0)
+      rack (>= 0.9.1)
     rack-mount (0.8.3)
       rack (>= 1.0.0)
     thread_safe (0.3.5)
@@ -58,3 +60,4 @@ DEPENDENCIES
   grape
   httpclient
   longurl
+  rack-contrib
