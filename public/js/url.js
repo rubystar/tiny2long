@@ -7,6 +7,7 @@ $(document).ready(function() {
       dataType: 'json',
       beforeSend: function() {
         $("#loading_spinner").show();
+        $('#long_url_container').text('');
       },
       success: function(data) {
         console.log('success');
