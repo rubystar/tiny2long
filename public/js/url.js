@@ -17,13 +17,11 @@ $(document).ready(function() {
         $('#long_url_container').text('');
       },
       success: function(data) {
-        console.log('success');
         var long_url_text = "<h3>Long Url: <span style=color:red;>" + data['long_url'] + "</span></h3>";
         $('#long_url_container').html(long_url_text);
         $("#loading_spinner").hide();
       },
       complete: function(data) {
-        console.log('completed');
         $("#loading_spinner").hide();
       }
     });

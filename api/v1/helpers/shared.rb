@@ -2,8 +2,7 @@ module API
   module V1
     module Helpers
       module Shared
-        def get_long_url(tiny_url, opts={})
-          original_url = tiny_url
+        def get_long_url(tiny_url)
           travelling = true
           final_url = tiny_url
           while travelling

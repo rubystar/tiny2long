@@ -4,5 +4,4 @@ require './api/v1/base.rb'
 require './api/base.rb'
 
 module API
-
 end
